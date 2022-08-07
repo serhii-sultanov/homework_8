@@ -15,22 +15,16 @@
 // console.log(sumTwoSmallestNumbers(1)); // undefined и отдельный console.error("...")
 
 // 2
-function createCalculator() {
-  return function (operator, b) {
-    const operations = {
-      sum: (a, b) => a + b,
-      mult: (a, b) => a * b,
-      sub: (a, b) => a - b,
-      div: (a, b) => a / b,
-    };
-    const operationFn = operations[operator];
-    const calcResult = operationFn(a, b);
-    return calcResult;
-  };
-}
-
-const calc = createCalculator(10);
-console.log(calc.sum(5)); /// 15
-console.log(calc.mult(10)); // 150
-console.log(calc.sub(40)); // 110
-console.log(calc.div(10)); // 11
+// function createCalculator(a) {
+//   return {
+//     sum: (b) => (a += b),
+//     mult: (b) => (a *= b),
+//     sub: (b) => (a -= b),
+//     div: (b) => (a /= b),
+//   };
+// }
+// const calc = createCalculator(10);
+// console.log(calc.sum(5)); /// 15
+// console.log(calc.mult(10)); // 150
+// console.log(calc.sub(40)); // 110
+// console.log(calc.div(10)); // 11
