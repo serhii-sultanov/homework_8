@@ -14,16 +14,19 @@
 // console.log(sumTwoSmallestNumbers(1, 3, 2)); // 3
 // console.log(sumTwoSmallestNumbers(1)); // undefined и отдельный console.error("...")
 
-// 2
-// function createCalculator(a) {
+// // 2
+// function createCalculator(initialValue) {
+//   let result = initialValue;
 //   return {
-//     sum: (b) => (a += b),
-//     mult: (b) => (a *= b),
-//     sub: (b) => (a -= b),
-//     div: (b) => (a /= b),
+//     sum: (closureFnValue) => (result += closureFnValue),
+//     mult: (closureFnValue) => (result *= closureFnValue),
+//     sub: (closureFnValue) => (result -= closureFnValue),
+//     div: (closureFnValue) => (result /= closureFnValue),
 //   };
 // }
+
 // const calc = createCalculator(10);
+
 // console.log(calc.sum(5)); /// 15
 // console.log(calc.mult(10)); // 150
 // console.log(calc.sub(40)); // 110
